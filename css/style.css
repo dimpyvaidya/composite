@@ -68,12 +68,11 @@ a {
     width: 15px;
     background-color: var(--white);
     margin: 0.125em 0;
-    /* transform: rotate(45deg); */
 }
 
 .mainmenu {
     grid-area: menu;
-    text-align: center;
+    text-align: left;
     display: none;
 }
 
@@ -90,14 +89,14 @@ a {
 
 .mainmenu a:hover {
     color: var(--black);
-    background-color: var(--white);
+    background-image: linear-gradient(to right, var(--blue), var(--aqua));
 }
 
-
-/*
-body {
-    background-color: var(--dim);
-}*/
+.menuicon {
+    height: 4%;
+    width: 4%;
+    padding-right: 1em;
+}
 
 .header {
     background-image: url("../img/headerimg.jpg");
@@ -291,11 +290,23 @@ li {
     width: 5%;
 }
 
-.footer {
+.user {
+    display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas: "user_experience" "map";
     background-image: linear-gradient(to right, var(--blue), var(--aqua));
     color: var(--white);
     padding: 1em;
+}
+
+.userexp {
+    grid-area: user_experince;
+}
+
+.map {
+    grid-area: map;
+    height: auto;
+    width: 100%;
 }
 
 .email {
@@ -350,6 +361,10 @@ li {
     display: none;
 }
 
+.footer {
+    background-image: linear-gradient(to right, var(--pink), var(--cream));
+}
+
 .socialmedia {
     padding: 0.6em 0;
     height: 30%;
@@ -386,22 +401,21 @@ li {
 /*Desktop version*/
 
 @media screen and (min-width: 1025px) {
-    .navbar {
-        grid-template-columns: 1em auto 2em;
-        grid-template-areas: "logo menu srch";
-    }
     .hamburger {
         display: none;
     }
     .mainmenu {
         text-align: center;
-        /* display: grid;
-      grid-template-columns: repeat(4, 1fr); */
         display: flex;
         justify-content: space-evenly;
     }
     .mainmenu a {
         padding: 0 1em;
+    }
+    .menuicon {
+        height: 10%;
+        width: 10%;
+        padding-right: 1em;
     }
     .header {
         padding: 0 0 30em 0;
@@ -417,6 +431,18 @@ li {
     }
     .discover_show {
         display: none;
+    }
+    .user {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "user_experience map";
+    }
+    .userexp {
+        grid-area: user_experince;
+    }
+    .map {
+        grid-area: map;
+        height: auto;
+        width: 100%;
     }
     .socialmedia {
         padding: 0.6em 0;
