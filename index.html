@@ -37,7 +37,7 @@
                     <a href="#"><img src="img/mypage.svg" alt="mypgicon" class="menuicon">My pages</a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/usefullink.svg" alt="linksicon" class="menuicon">Useful Links</a>
+                    <a href="#"><img src="img/usefullink.svg" alt="loginicon" class="menuicon">Log in</a>
                 </li>
 
             </ul>
@@ -92,25 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hotel_block">
-                <img src="img/hotel10m.jpg" alt="hotel10" class="hotelimg">
-                <div class="hotel_content">
-                    <h2 class="hotelnm">Park regis Hotels</h2>
-                    <h3 class="price">200 CAD per night</h3>
 
-                    <ul class="desc">
-                        <li>Free cancellation</li>
-                        <li>Reserve now, pay later</li>
-                        <li>Free High-Speed Internet</li>
-                    </ul>
-                    <div>
-                        <h3 class="comment">Comment from Fandu</h3>
-                        <p class="cmt">Great location, staff amazing, nothing too much trouble</p>
-                        <img src="img/5star.png" alt="rating" class="rating">
-
-                    </div>
-                </div>
-            </div>
 
             <div class="hotel_block">
                 <img src="img/hotel3m.jpg" alt="hotel3" class="hotelimg">
@@ -269,40 +251,23 @@
                     </div>
                 </div>
             </div>
-            <div class="hotel_block">
-                <img src="img/hotel5m.jpg" alt="hotel11" class="hotelimg">
-                <div class="hotel_content">
-                    <h2 class="hotelnm">Magnum Hotels</h2>
-                    <h3 class="price">200 CAD per night</h3>
 
-                    <ul class="desc">
-                        <li>Free cancellation</li>
-                        <li>Reserve now, pay later</li>
-                        <li>Free High-Speed Internet</li>
-                    </ul>
-                    <div>
-                        <h3 class="comment">Comment from Fandu</h3>
-                        <p class="cmt">Great location, staff amazing, nothing too much trouble</p>
-                        <img src="img/3star.png" alt="rating" class="rating">
-
-                    </div>
-                </div>
-            </div>
 
         </div>
 
 
 
     </main>
-    <article class="box">
-        <div>
-            <img src="./img/lg.png" class="box_icon">
-            <BR CLEAR=”left” />
-            <h1>Find hotels in Canada</h1>
-        </div>
-        <div>
-            <h3>Select your destination</h3>
-            <select name="places" class="basicbox place">
+    <article class="bgimg">
+        <section class="box">
+            <div>
+                <img src="./img/lg.png" class="box_icon">
+                <BR CLEAR=”left” />
+                <h1>Find hotels in Canada</h1>
+            </div>
+            <div>
+                <h3>Select your destination</h3>
+                <select name="places" class="basicbox place">
                 <option value="Select">I want to go...</option>
                 <option value="Alberta">Banff and Lake Louise, Alberta</option>
                 <option value="nb">Bay of Fundy, New Brunswick</option>
@@ -315,36 +280,69 @@
                 <option value="Toronto">Niagra Falls, Toronto</option>
                 <option value="Ontario">The Muskoka Lakes, Ontario</option>
             </select>
-        </div>
-        <div class="date">
-            <h3>Check-in Date</h3>
-            <input type="text" name="fromdt" class="basicbox" value="yyyy-mm-dd">
-        </div>
-        <div class="date">
-            <h3>Check-out Date</h3>
-            <input type="text" name="todt" class="basicbox" value="yyyy-mm-dd">
-        </div>
-        <div>
-            <h3>Rooms required</h3>
-            <select name="rooms" class="basicbox room">
+            </div>
+            <div class="date">
+                <h3>Check-in Date</h3>
+                <input type="text" name="fromdt" class="basicbox" value="yyyy-mm-dd">
+            </div>
+            <div class="date">
+                <h3>Check-out Date</h3>
+                <input type="text" name="todt" class="basicbox" value="yyyy-mm-dd">
+            </div>
+            <div>
+                <h3>Rooms required</h3>
+                <select name="rooms" class="basicbox room">
                 <option value="noofrooms">Rooms</option>
                 <option value="1">1 Room</option>
                 <option value="2">2 Rooms</option>
                 <option value="3">3 Rooms</option>
             </select>
-        </div>
-        <div>
-            <h3>Rooms choices</h3>
-            <select name="rooms" class="basicbox room">
+            </div>
+            <div>
+                <h3>Rooms choices</h3>
+                <select name="rooms" class="basicbox room">
                 <option value="noofrooms">Room views</option>
                 <option value="view1">Lake view</option>
                 <option value="view2">City view</option>
                 <option value="view3">Street view</option>
             </select>
-        </div>
-        <div>
-            <a href="#" class="search_button">Find Hotels</a>
-        </div>
+            </div>
+            <div>
+                <a href="#" class="search_button">Find Hotels</a>
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <div class="user">
+                <p>
+                    <h2 class="hotelnm">When are you planning to travel?</h2>
+                </p>
+                <div>
+                    <p>Add Dates for updated pricing and availability.</p><br>
+                    <a href="#" class="btn">Add Dates</a>
+
+                </div><br>
+                <p>Want to receive exclusive <strong>hotel offers?</strong> Subscribe to our newsletter!</p>
+                <div>
+                    <input type="text" name="email" class="basicbox email" value="Email address">
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+                <p>How likely are you to return to <em>OutErra.com?</em></p>
+                <div>
+                    <select name="likely" class="basicbox pagelike">
+                    <option value="choose">Please choose one...</option>
+                    <option value="highlike">Highly likely</option>
+                    <option value="somewhatlike">Somewhat likely</option>
+                    <option value="unsure">Unsure</option>
+                    <option value="somewhatunlike">Somewhat unlikely</option>
+                    <option value="highunlik">Highly unlikely</option>
+                </select>
+                </div>
+            </div>
+        </section>
     </article>
 
     <div class="discover_show">
@@ -376,37 +374,7 @@
             </div>
         </section>
     </div>
-
     <footer class="footer">
-
-        <div>
-            <p>
-                <h2 class="hotelnm">When are you planning to travel?</h2>
-            </p>
-            <div>
-                <p>Add Dates for updated pricing and availability.</p><br>
-                <a href="#" class="btn">Add Dates</a>
-
-            </div><br>
-            <p>Want to receive exclusive <strong>hotel offers?</strong> Subscribe to our newsletter!</p>
-            <div>
-                <input type="text" name="email" class="basicbox email" value="Email address">
-                <a href="#" class="btn">Subscribe</a>
-            </div>
-            <p>How likely are you to return to <em>OutErra.com?</em></p>
-            <div>
-                <select name="likely" class="basicbox pagelike">
-                    <option value="choose">Please choose one...</option>
-                    <option value="highlike">Highly likely</option>
-                    <option value="somewhatlike">Somewhat likely</option>
-                    <option value="unsure">Unsure</option>
-                    <option value="somewhatunlike">Somewhat unlikely</option>
-                    <option value="highunlik">Highly unlikely</option>
-                </select>
-            </div>
-        </div>
-
-
         <div class="copyright">
             <a href="#">
                 <img src="/img/social1.png" class="socialmedia">
@@ -415,6 +383,7 @@
             <p>OutErra.com and the OutErra.com logo are trademarks or registered trademarks of OutErra.com, LP in the Canada and/or other countries. All other trademarks are property of their respective owners.</p>
         </div>
         </div>
+
     </footer>
 </body>
 
